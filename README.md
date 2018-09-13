@@ -25,6 +25,12 @@ The proposal should including the following information:
 - Key intermediate steps and timeline
 - Update project diary at least once a week (diary link will be send to each group)
 
+-- Create proposal google doc.
+-- Create timetable google doc.
+-- Start to write the proposal.
+-- Find a paper for autonomous parking.
+-- Add Nemo to github for this project.
+
 ## Key steps:
 - [ ] Duckiebot setup (may include soldering) 
 - [ ] Wheels and camera calibration 
