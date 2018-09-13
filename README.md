@@ -15,15 +15,15 @@ Project report/video/software due: 12/17
 
 # Proposal
 The proposal should including the following information:
-Proposed project (based on the assigned project type)
-Summary of project 
-Background and motivation of the project (include references if appropriate).
-Scope (see below – must include the proposed skill demonstration, but it may be modified as the semester progresses).  Include project goals and classify them as baseline, target, and reach goals.
-Division of work in the team
-Assessment of confidence level/risk (skill level of team members, new skills to acquire, part requirement, etc.).
-Addition parts/components that will need to be purchased
-Key intermediate steps and timeline
-Update project diary at least once a week (diary link will be send to each group)
+- Proposed project (based on the assigned project type)
+- Summary of project 
+- Background and motivation of the project (include references if appropriate).
+- Scope (see below – must include the proposed skill demonstration, but it may be modified as the semester progresses).  Include project goals and classify them as baseline, target, and reach goals.
+- Division of work in the team
+- Assessment of confidence level/risk (skill level of team members, new skills to acquire, part requirement, etc.).
+- Addition parts/components that will need to be purchased
+- Key intermediate steps and timeline
+- Update project diary at least once a week (diary link will be send to each group)
 
 ## Key steps:
 - [ ] Duckiebot setup (may include soldering) 
