@@ -8,7 +8,7 @@ Helpful links to start:
 - https://www.duckietown.org/instructors/classes/educational-resources
 - http://docs.duckietown.org/
 - https://github.com/duckietown/Software
-- Duckiebot setup guide:https://docs.google.com/document/d/1J0EYZkcoZcbjndBVh_g7ouEWFcPu9WZ6be_LVghDoII/edit
+- Duckiebot [setup guide]https://docs.google.com/document/d/1J0EYZkcoZcbjndBVh_g7ouEWFcPu9WZ6be_LVghDoII/edit
 
 Project proposal due: 9/21
 Project report/video/software due: 12/17
