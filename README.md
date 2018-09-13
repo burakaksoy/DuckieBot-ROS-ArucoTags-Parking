@@ -26,9 +26,9 @@ Key intermediate steps and timeline
 Update project diary at least once a week (diary link will be send to each group)
 
 ## Key steps:
--[] Duckiebot setup (may include soldering) 
--[] Wheels and camera calibration 
--[] Duckietown construction
--[] Path planning (open loop control): Use Duckietown map to drive Duckiebot from one location to another, including all known constraints
--[] Path following (vision guided feedback control)
--[] New skill or refinement of existing skill (not already in the MIT repository) Examples: navigation based on signs, collision avoidance/braking/slow-down/stop, localization based on known landmarks, platooning, parking, tractor-trailer, working together with Dobot.
+- [] Duckiebot setup (may include soldering) 
+- [] Wheels and camera calibration 
+- [] Duckietown construction
+- [] Path planning (open loop control): Use Duckietown map to drive Duckiebot from one location to another, including all known constraints
+- [] Path following (vision guided feedback control)
+- [] New skill or refinement of existing skill (not already in the MIT repository) Examples: navigation based on signs, collision avoidance/braking/slow-down/stop, localization based on known landmarks, platooning, parking, tractor-trailer, working together with Dobot.
