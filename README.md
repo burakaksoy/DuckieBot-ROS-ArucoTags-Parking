@@ -9,6 +9,10 @@ Helpful links to start:
 - http://docs.duckietown.org/
 - https://github.com/duckietown/Software
 - Duckiebot [setup guide](https://docs.google.com/document/d/1J0EYZkcoZcbjndBVh_g7ouEWFcPu9WZ6be_LVghDoII/edit)
+  
+- https://docs.opencv.org/3.4.2/d5/dae/tutorial_aruco_detection.html
+- https://www.uco.es/investiga/grupos/ava/node/26
+- Main Paper: https://www.sciencedirect.com/science/article/pii/S0262885618300799
 
 Project proposal due: 9/21
 Project report/video/software due: 12/17
