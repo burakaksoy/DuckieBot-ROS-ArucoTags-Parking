@@ -14,7 +14,7 @@ Project proposal due: 9/21
 Project report/video/software due: 12/17
 
 # Proposal
-[Proposal Draft:](https://docs.google.com/document/d/1Dqug7z7aldNEKwI-MgvFbbHySeMAW2DbE9ogw2JG2vc/edit?usp=sharing)
+[Proposal Draft Link](https://docs.google.com/document/d/1Dqug7z7aldNEKwI-MgvFbbHySeMAW2DbE9ogw2JG2vc/edit?usp=sharing)  
 The proposal should including the following information:
 - Proposed project (based on the assigned project type)
 - Summary of project 
