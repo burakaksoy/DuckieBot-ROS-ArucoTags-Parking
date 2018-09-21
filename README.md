@@ -13,6 +13,7 @@ Helpful links to start:
 - https://docs.opencv.org/3.4.2/d5/dae/tutorial_aruco_detection.html
 - https://www.uco.es/investiga/grupos/ava/node/26
 - Main Paper: https://www.sciencedirect.com/science/article/pii/S0262885618300799
+- https://www.youtube.com/watch?v=VsIMl8O_F1w
 
 Project proposal due: 9/21
 Project report/video/software due: 12/17
