@@ -46,7 +46,7 @@ The proposal should including the following information:
 - [ ] New skill or refinement of existing skill (not already in the MIT repository) Examples: navigation based on signs, collision avoidance/braking/slow-down/stop, localization based on known landmarks, platooning, parking, tractor-trailer, working together with Dobot.
 ## Timeline
 -[09/25/2018]: Actions Completed
-               - [ ]Global Settings,SSH Keys, Clone Duckietown Repository
-               - [ ]Setup ROS environment
-               - [ ]Soldering the Pi Hat Circuit Boards
-               - [ ]Robot Assembly
+               - Global Settings,SSH Keys, Clone Duckietown Repository
+               - Setup ROS environment
+               - Soldering the Pi Hat Circuit Boards
+               - Robot Assembly
