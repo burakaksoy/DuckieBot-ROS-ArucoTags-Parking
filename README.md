@@ -44,3 +44,9 @@ The proposal should including the following information:
 - [ ] Path planning (open loop control): Use Duckietown map to drive Duckiebot from one location to another, including all known constraints
 - [ ] Path following (vision guided feedback control)
 - [ ] New skill or refinement of existing skill (not already in the MIT repository) Examples: navigation based on signs, collision avoidance/braking/slow-down/stop, localization based on known landmarks, platooning, parking, tractor-trailer, working together with Dobot.
+## Timeline
+-[09/25/2018]: Actions Completed
+               - [ ]Global Settings,SSH Keys, Clone Duckietown Repository
+               - [ ]Setup ROS environment
+               - [ ]Soldering the Pi Hat Circuit Boards
+               - [ ]Robot Assembly
