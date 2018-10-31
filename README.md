@@ -52,3 +52,13 @@ Actions Completed
 - Setup ROS environment
 - Soldering the Pi Hat Circuit Boards
 - Robot Assembly
+-[10/10/2018]:
+- GitHub issue resolved with TA. GitHub is not really required.
+- Battery replaced because it was too big in size and did not fit to robot.
+- Started joystick manipulation from Pi
+-[10/19/2018]:
+- Could not Joystick From remote PC.
+- It was an ssh issue. Solved.
+- Joystick works properly.
+-[10/27/2018]:
+- Camera calibration is done.
