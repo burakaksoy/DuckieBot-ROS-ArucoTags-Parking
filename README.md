@@ -46,21 +46,21 @@ The proposal should including the following information:
 - [ ] New skill or refinement of existing skill (not already in the MIT repository) Examples: navigation based on signs, collision avoidance/braking/slow-down/stop, localization based on known landmarks, platooning, parking, tractor-trailer, working together with Dobot.
 
 ## Timeline
---[09/25/2018]: 
-Actions Completed
-- Global Settings,SSH Keys, Clone Duckietown Repository
-- Setup ROS environment
-- Soldering the Pi Hat Circuit Boards
-- Robot Assembly
---[10/10/2018]:
-- GitHub issue resolved with TA. GitHub is not really required.
-- Battery replaced because it was too big in size and did not fit to robot.
-- Started joystick manipulation from Pi
---[10/19/2018]:
-- Could not control bot using Joystick through remote connection.
-- It was an ssh issue. Solved.
-- Remote connection was established properly. Had to add bot IP as well as vehicle's IP to /etc/hosts in own machine and machine's IP to bot's /etc/hosts
---[10/27/2018]:
-- Camera calibration is done.
---[11/3/2018]:
--Issues with wheel calibration. Omni wheel getting stuck randomly, causing different drift directions. Trying after application of grease to omniwheel.
+-[09/25/2018]: 
+  Actions Completed
+  - Global Settings,SSH Keys, Clone Duckietown Repository
+  - Setup ROS environment
+  - Soldering the Pi Hat Circuit Boards
+  - Robot Assembly
+-[10/10/2018]:
+  - GitHub issue resolved with TA. GitHub is not really required.
+  - Battery replaced because it was too big in size and did not fit to robot.
+  - Started joystick manipulation from Pi
+-[10/19/2018]:
+  - Could not control bot using Joystick through remote connection.
+  - It was an ssh issue. Solved.
+  - Remote connection was established properly. Had to add bot IP as well as vehicle's IP to /etc/hosts in own machine and        machine's IP to bot's /etc/hosts
+-[10/27/2018]:
+  - Camera calibration is done.
+-[11/3/2018]:
+  -Issues with wheel calibration. Omni wheel getting stuck randomly, causing different drift directions. Trying after application of grease to omniwheel.
