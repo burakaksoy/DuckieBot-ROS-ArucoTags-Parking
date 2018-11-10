@@ -62,5 +62,5 @@ Actions Completed
 - Remote connection was established properly. Had to add bot IP as well as vehicle's IP to /etc/hosts in own machine and machine's IP to bot's /etc/hosts
 -[10/27/2018]:
 - Camera calibration is done.
--[10/3/2018]
+-[11/3/2018]:
 -Issues with wheel calibration. Omni wheel getting stuck randomly, causing different drift directions. Trying after application of grease to omniwheel.
