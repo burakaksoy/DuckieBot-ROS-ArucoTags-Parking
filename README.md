@@ -88,3 +88,7 @@ The proposal includes the following information:
 	 $roslaunch duckietown lane_filter.launch veh:=duckiepark
  - This command gave several errors and ended. I applied the trouble shooting steps.
  - As stated in the document it Takes hours to complete the installation.
+ - After more than 3 hours waiting for installation of "sckit-learn" system gave an error which states no space left on device! Here is the error:
+ /tmp/ccVKRMBr.s: Fatal error: can't close build/temp.linux-armv7l-2.7/scipy/sparse/sparsetools/bsr.o: No space left on device
+ - An e-mail has been sent to TA.
+ 
