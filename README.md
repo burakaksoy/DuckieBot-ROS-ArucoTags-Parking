@@ -2,6 +2,8 @@
 
 This repository is created for one of the DuckieBot projects at RPI Robotics1 course.  
 
+In this project, Duckiebots will perform several parking scenarios using single camera visual feedback, which utilizes the guidance of track lines and squared fiducial markers. Squared Fiducial Markers will be used to calculate the relative pose of other Duckiebots also present in the scene, while track lines will be used for guidance or general helper marks. 
+
 Helpful links to start:
 
 - https://www.duckietown.org/
@@ -19,8 +21,8 @@ Project proposal due: 9/21
 Project report/video/software due: 12/17
 
 # Proposal
-[Proposal Draft Link](https://docs.google.com/document/d/1Dqug7z7aldNEKwI-MgvFbbHySeMAW2DbE9ogw2JG2vc/edit?usp=sharing)  
-The proposal should including the following information:
+[Proposal Link](https://docs.google.com/document/d/1Dqug7z7aldNEKwI-MgvFbbHySeMAW2DbE9ogw2JG2vc/edit?usp=sharing)  
+The proposal includes the following information:
 - Proposed project (based on the assigned project type)
 - Summary of project 
 - Background and motivation of the project (include references if appropriate).
@@ -30,20 +32,6 @@ The proposal should including the following information:
 - Addition parts/components that will need to be purchased
 - Key intermediate steps and timeline
 - Update project diary at least once a week (diary link will be send to each group)
-
--- Create proposal google doc.
--- Create timetable google doc.
--- Start to write the proposal.
--- Find a paper for autonomous parking.
--- Add Nemo to github for this project.
-
-## Key steps:
-- [ ] Duckiebot setup (may include soldering) 
-- [ ] Wheels and camera calibration 
-- [ ] Duckietown construction
-- [ ] Path planning (open loop control): Use Duckietown map to drive Duckiebot from one location to another, including all known constraints
-- [ ] Path following (vision guided feedback control)
-- [ ] New skill or refinement of existing skill (not already in the MIT repository) Examples: navigation based on signs, collision avoidance/braking/slow-down/stop, localization based on known landmarks, platooning, parking, tractor-trailer, working together with Dobot.
 
 ## Timeline
 -[09/25/2018]: 
