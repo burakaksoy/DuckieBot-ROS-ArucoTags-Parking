@@ -89,3 +89,14 @@ The proposal should including the following information:
 
   - Set parameters are saved using the command:
   - rosservice call /duckiepark/inverse_kinematics_node/save_calibration
+  
+- [11.12.2018]
+ Learning ROS to write our own codes to Duckie
+ - Starting from last week, I completed reading a book named "Gentle Introduction to ROS" with 152 pg.
+
+- [11.13.2018]
+ Line Detection Demo
+ - In a new window start the lane filter node:
+	 $roslaunch duckietown lane_filter.launch veh:=duckiepark
+ - This command gave several errors and ended. I applied the trouble shooting steps.
+ - As stated in the document it Takes hours to complete the installation.
