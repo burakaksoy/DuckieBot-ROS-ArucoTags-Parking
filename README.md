@@ -94,4 +94,8 @@ The proposal includes the following information:
  - UPDATE: After one more try with the second suggested command in the documentaion, everything worked successfully!
  - Now we are able to run the line Detection Demo
  
+ -[11.13.2018]
+  -Successfully operated webcam using ROS. Will apply same method for pose estimation.
+ 
+ 
  
