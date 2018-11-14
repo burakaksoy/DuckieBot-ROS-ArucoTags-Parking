@@ -91,4 +91,7 @@ The proposal includes the following information:
  - After more than 3 hours waiting for installation of "sckit-learn" system gave an error which states no space left on device! Here is the error:
  /tmp/ccVKRMBr.s: Fatal error: can't close build/temp.linux-armv7l-2.7/scipy/sparse/sparsetools/bsr.o: No space left on device
  - An e-mail has been sent to TA.
+ - UPDATE: After one more try with the second suggested command in the documentaion, everything worked successfully!
+ - Now we are able to run the line Detection Demo
+ 
  
