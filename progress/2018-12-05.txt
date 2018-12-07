@@ -1,0 +1,40 @@
+We made calibration again
+So copied calibration files
+
+Launching the camera
+burak@buraka:~$ roslaunch duckietown camera.launch veh:=duckiepark raw:=true rect:=true
+
+Install aruco-ros with command:
+sudo apt-get install ros-indigo-aruco-ros
+
+We created a launch file in src/duckietown named aruco_test.launch
+using the reference from website: http://ros-developer.com/2017/04/23/aruco-ros/
+
+<remap from="/camera_info" to="/duckiepark/camera_node/raw_camera_info" />
+<remap from="/image" to="/duckiepark/camera_node/image/rect" />
+<param name="image_is_rectified" value="True"/>
+
+<remap from="/camera_info" to="/duckiepark/camera_node/raw_camera_info" />
+<remap from="/image" to="/duckiepark/camera_node/image/raw" />
+<param name="image_is_rectified" value="False"/>
+
+-------------------------------------
+
+After successfully detecitng the aruco tag and calculating the pose we returned back to lane tracking 
+It was not working before. Since we made the calibrations again, we wanted give it a one more shot for our further steps.
+
+So we checked the duckietown/joystick.launch file and saw that it runs
+<!-- joy_mapper -->
+<!-- run inverse_kinematics_node -->
+<!-- run forward_kinematics_node -->
+<!-- run the velocity_to_pose_node -->
+<!-- Wheels Driver -->
+
+The details of the messages can be seen in image named '2018-12-05-12-24-joystick-rosgraph.png'
+
+So we will check the joy_mapper to see how they publish the appropriate message.
+Accordingly we will create our own nodes
+And the last 4 launch lines above will be exactly the same in our future launch file.
+
+
+

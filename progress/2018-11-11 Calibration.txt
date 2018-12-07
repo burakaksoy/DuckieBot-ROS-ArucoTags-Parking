@@ -1,0 +1,19 @@
+CALIBRATION
+I made my experiments for 2 meters long line.
+TRIM PARAMETER (T) CALIBRATION
+I get the best results with T=+0.012 value with command:
+
+rosservice call /duckiepark/inverse_kinematics_node/set_trim  0.012
+
+One important thing that I have noticed is that, when the move command is towards backwards robot moves almost perfectly in the path without drifting. However when going forwards robot might have random driftings towards left or right. 
+
+Therefore changing the directions of the robot might be a good idea for more consistent paths. (But this will also require putting the camera to back instead of front.)
+
+GAIN PARAMETER (G) CALIBRATION
+If G is higher than 1.00 robot might put its less heavy side to up because of the too much acceleration. Therefore G=1.00 with command
+
+rosservice call /duckiepark/inverse_kinematics_node/set_gain 1.00
+
+Set parameters are saved using the command:
+
+rosservice call /duckiepark/inverse_kinematics_node/save_calibration

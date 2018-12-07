@@ -1,0 +1,29 @@
+Autonomous lane Following Demo:
+
+$roslaunch duckietown lane_controller.launch veh:=duckiepark was giving an error -> IndexError: only integers, slices(':'), ellipsis ('...') , numpy.newaxis('None') and integer or boolean arrays are valid indices
+
+Performed Troubleshooting:  
+$ sudo apt-get update
+$ sudo apt-get install build-essential python-dev python-setuptools python-numpy
+python-scipy python-sklearn libatlas-dev libatlas3gf-base libblas-dev liblapack-dev
+libatlas-base-dev gfortran -y
+$ sudo pip install --force-reinstall --upgrade scikit-learn
+
+last command gave an error stating 'no space is left on the device'
+
+Ran the following command:
+sudo pip install --force-reinstall --upgrade scipy
+
+Installed scipy without errors
+
+Changed the following lines in the file -> duckietown/catkin_ws/src/lane_filter/src/lane_filter_node.py ON THE DUCKIEBOT:
+            import math
+            i = int(math.floor((d_i - self.d_min)/self.delta_d))
+            j = int(math.floor((phi_i - self.phi_min)/self.delta_phi))
+Autonomous lane following works! But car does not stop on pressing Ctrl+C or shutting down node.
+
+Rebooted local machine as well as Raspberry Pi
+
+Autonomous lane following works and car stops!
+
+

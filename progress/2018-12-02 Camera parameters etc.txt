@@ -1,0 +1,58 @@
+1. To get image/compressed we need to camera_node.launch in catkin_ws/src/pi_camera which will launch camera_node_sequence.py
+This file specifies the intrinsic calibration file that we need to use in line 44
+
+Extrinsic and Intrnsic parameters stored in Duckiebot directory:
+ubuntu@duckiepark:~/duckietown/catkin_ws/src/duckietown/config/baseline/calibration
+In this directory there are extrinsic parameters folder and file
+camera_extrinsic/duckiepark.yaml
+And Intrinsic parameters folder
+camera_intrinsic/duckiepark.yaml
+
+We copied those files to our computers too with commands
+For example:
+~/duckietown/catkin_ws/src/duckietown/config/baseline/calibration/camera_intrinsic$ scp duckiepark.yaml burak@buraka:~/duckietown/catkin_ws/src/duckietown/config/baseline/calibration/camera_intrinsic
+And change folder names to camera_extrinscic for copying the extrinsic file too
+
+To access to necessary topics for Aruco detection we need to launch camera.launch in duckietown package
+This launch file can publish topics
+/duckiepark/camera_node/image/compressed
+/duckiepakr/camera_node/camera_info
+
+Then we cloned the aruco_detect package from github
+ubuntu@duckiepark:~/duckietown/catkin_ws/src$ git clone -b indigo-devel https://github.com/UbiquityRobotics/fiducials.git
+
+Catkin_make gave compiling errors This was the error:
+	"
+	CMake Error at /opt/ros/indigo/share/catkin/cmake/catkinConfig.cmake:83 (find_package):
+  Could not find a package configuration file provided by "angles" with any
+  of the following names:
+
+    anglesConfig.cmake
+    angles-config.cmake
+
+  Add the installation prefix of "angles" to CMAKE_PREFIX_PATH or set
+  "angles_DIR" to a directory containing one of the above files.  If "angles"
+  provides a separate development package or SDK, be sure it has been
+  installed. "
+
+So to solve: sudo apt-install ros-indigo-angles
+
+Then we applied catkin_make again we got no errors.
+
+After catkin_make do not forget to 
+ubuntu@duckiepark:~/duckietown/catkin_ws$ source devel/setup.bash
+
+To make the duckie master itself
+ubuntu@duckiepark:~$ source /opt/ros/indigo/setup.bash 
+ubuntu@duckiepark:~$ cd duckietown/catkin_ws/
+ubuntu@duckiepark:~/duckietown/catkin_ws$ source devel/setup.bash
+
+
+-----------------------------------------------------------------------------------------
+
+To remotely ruyn the detection from our own computers we also installed the fiducialpackage to our computers
+and we need to create a new lunch file to make the packages run from remote computer but inside duckie.
+
+
+
+
