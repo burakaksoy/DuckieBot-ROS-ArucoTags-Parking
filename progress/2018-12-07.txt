@@ -1,0 +1,33 @@
+Today we started to creating new nodes with ARUCO tags.
+So First we need to launch camera.launch:
+roslaunch duckietown camera.launch veh:=duckiepark raw:=true rect:=true
+
+Then we need to launch our aruco_test.launch:
+roslaunch duckietown aruco_test.launch markerId:=50 markerSize:=0.07
+
+Too see the output image we used 
+rqt_image_view
+To see the pose info we used
+rostopic echo /aruco_single/pose
+
+We realized that Aruco Detection is a little bit slow, to increase the rate, we decided to try to run it inside duckie instead of our computer.
+Therefore We installed aruco_ros package in duckie too. 
+
+Then, we created a launch file which will run aruco in duckie which is duckietown/aruco_test_in_duckie.launch
+
+roslaunch duckietown aruco_test_in_duckie.launch veh:=duckiepark markerId:=50 markerSize:=0.07
+
+As result, aruco detection was more slow while running in duckie because of the detection is computationally more costly than just transmitting the raw images to our computer. 
+So we stick with aruco_test.launch instead aruco_test_in_duckie.launch
+
+
+We will create a package and a new node in it:
+Subscribes to:
+    /aruco_single/pose
+Publishes:
+    /car_cmd
+    
+    
+
+    
+
