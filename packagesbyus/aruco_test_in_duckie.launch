@@ -13,7 +13,7 @@
 <node machine="$(arg veh)" pkg="aruco_ros" type="single" name="aruco_single"> <!-- ADDED(only machine=...) -->
 
 <remap from="/camera_info" to="/duckiepark/camera_node/raw_camera_info" />
-<remap from="/image" to="/duckiepark/camera_node/image/raw" />
+<remap from="/image" to="/duckiepark/camera_node/image/rect" />
 <param name="image_is_rectified" value="True"/>
 <param name="marker_size" value="$(arg markerSize)"/>
 <param name="marker_id" value="$(arg markerId)"/>
