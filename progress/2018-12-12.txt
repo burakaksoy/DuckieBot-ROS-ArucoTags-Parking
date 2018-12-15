@@ -1,0 +1,22 @@
+duckietown/line_detector.launch we set the default value of raw as true. 
+
+We changed the w and v in duckiebot at
+ubuntu@duckiepark:~/duckietown/catkin_ws/src/lane_control/scripts$ nano lane_controller_node.py
+to give the bot more time to detect the aruco tag.
+
+We multiplied the gains in cbPose function  with some gains like:
+car_control_msg.v = self.v_bar/2.0
+and
+car_control_msg.omega = (self.k_d * cross_track_err + self.k_theta * heading_err)/1.25
+
+we launched 
+burak@buraka:~$ roslaunch duckietown aruco_test_in_duckie.launch veh:=duckiepark
+and
+burak@buraka:~$ roslaunch duckietown lane_controller.launch veh:=duckiepark
+
+Now, duckie stops when it sees the tag in 15cm.
+
+Rqt_graph is saved in 2018-12-12 rqt_graph.png file
+
+-----
+

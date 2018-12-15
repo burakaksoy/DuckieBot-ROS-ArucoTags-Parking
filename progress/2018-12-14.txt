@@ -1,0 +1,42 @@
+To add the function of controlled parking instead of hardcoded parking first we investigated the pose information from aruco_single
+
+orientation information was given in quaternions therefore we transformed them to euler angles to understand the rotations more intuitively. To do that we created a node in lane_control package file named aruco_quaternion_to_euler.py 
+
+Required launch commands for testing:
+
+roslaunch duckietown camera.launch veh:=duckiepark raw:=true rect:=true
+
+roslaunch duckietown aruco_test_in_duckie.launch veh:=duckiepark
+
+rostopic echo /duckiepark/aruco_single/position
+
+rosrun lane_control aruco_quaternion_to_euler.py
+
+As said, this code was for only seeing the rotation angles. After several pose test these has been seen:
+1)Tag should be rotated 90 degrees in clockwise direction
+2)Position X gives deltaX
+3)Position Z gives deltaY
+4)Rotation around Y axis(Euler[1]) gives theta
+
+------
+Now We will implement controlled parking making changes in lane_controller_node.py
+
+Since that file already includes hardcoded parking, new changes will be saved in lane_controller_node2.py
+
+This file copied to duckiebot using this command:
+burak@buraka:~/Desktop$ scp lane_controller_node2.py ubuntu@duckiepark:~/duckietown/catkin_ws/src/lane_control/scripts
+
+To launch this node the launch file is also updated with name lane_controller2.launch in duckietown
+Accordingly launch file in lane_control package is also updated with name lane_controller_node2.launch
+
+Also, in duckietown Camera.launch rect default parameter set to true
+
+
+To test the code these commands should be given:
+
+roslaunch duckietown aruco_test_in_duckie.launch veh:=duckiepark
+
+roslaunch duckietown lane_controller2.launch veh:=duckiepark
+
+
+
